@@ -52,8 +52,14 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
+        margin-bottom: 0;
         
     }
+
+    .about-employee-pic {
+        margin-bottom: 5%;
+    }
+
     .about-employee:nth-of-type(even) {
         flex-direction: row-reverse;
     }

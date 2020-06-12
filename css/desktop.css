@@ -9,6 +9,11 @@
         height: 734px;
     }
 
+    .offer h1 {
+        margin-bottom: 15%;
+        text-align: left;
+    }
+
     .box-container {
         display:grid;
         grid-template-columns: 198px 198px 198px;
