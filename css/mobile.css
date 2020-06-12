@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+.container {
+    width: 94%;
+    margin: 0 auto;
+  }
+  
+  .about, .offer {
+    padding: 60px 0;    
+    }
+}
