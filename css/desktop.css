@@ -2,4 +2,21 @@
     .container {
         width: 960px;
         }
+
+/*OFFER START*/
+
+    .offer {
+        height: 734px;
+    }
+
+    .box-container {
+        display:grid;
+        grid-template-columns: 198px 198px 198px;
+        grid-template-rows: 194px 194px;
+        gap: 63px;           
+    
+    }
+
+
+
 }

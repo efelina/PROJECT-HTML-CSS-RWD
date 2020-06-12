@@ -3,4 +3,87 @@
         width: 90%;
         }
 
+/* NAVIGATION START */
+
+    .nav-links {
+        display:flex;
+        justify-content: space-between;
+        width:26%;
+    }
+
+    nav .nav-links a {
+        color:#f1f1f1;
+    }
+    
+    .contact-link {
+        cursor: not-allowed;     
+    }
+    
+/* NAVIGATION END */
+
+/* LANDING PAGE START */
+    
+    .landing-page-shadow .container {
+        height: 35%;
+    }
+    
+    .landing-page p {
+        font-size: 23px;
+    }
+
+    .landing-page h1, .landing-page p {
+        width: 53%;
+      }
+
+/*LANDING PAGE END */ 
+
+/* ABOUT START */
+
+    .about {
+        height: 574px;
+    }
+
+    .about .container h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .about-employee {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        
+    }
+    .about-employee:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .about-employee:nth-of-type(even) .about-employee-desc {
+        text-align: right;
+    } 
+    
+    .about-employee-desc {
+        width: calc(100% - 260px);
+    }
+
+    /*OFFER START*/
+    .offer h1 {
+        margin-bottom: 10%;
+        text-align: left;
+    } 
+
+    .about-employee-desc h2  {
+        margin-bottom: 10px;
+      }
+    
+     .box-container {
+        display:grid;
+        grid-template-columns: 198px 198px;
+        grid-template-rows: 194px 194px 194px;
+        gap: 63px;           
+       
+    }
+
+    
 }
+    

@@ -1,10 +1,221 @@
-@media (max-width: 768px) {
-.container {
+
+    .container {
     width: 94%;
     margin: 0 auto;
   }
   
-  .about, .offer {
+    .about, .offer {
     padding: 60px 0;    
     }
-}
+
+/* NAVIGATION START */
+
+    nav {
+        position: fixed;
+        width: 100%;
+        background-color: #4E4E4E;
+        font-size: 18px;
+        z-index: 1;
+    }
+
+    nav .container {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .nav-links {
+        display: none;
+      }
+
+    
+/* NAVIGATION END */
+
+/* LANDING PAGE START */
+
+    .landing-page {
+        height: 100vh;
+        background-image: url(https://live.staticflickr.com/65535/49965212542_302460e73e_3k.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    .landing-page-shadow {
+        display: flex;
+        align-items: center;
+        width:100%;
+        height: 100%;
+        background-color: rgba (0, 0, 0, 0.3);
+    }
+
+    .landing-page-shadow .container {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 50%;    
+    }
+
+    @media (min-height: 700px) {
+        .landing-page-shadow .container {
+          height: 40%;
+        }
+      }
+
+    .landing-page p, .landing-page h1 {
+        color:#FFF;
+        width: 80%;     
+    }
+
+    .landing-page-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 164px;
+        height: 40px;
+        border: 3px solid #FFFFFF;
+        transition: 1s linear;
+        transition-property: background, color;
+        }
+    
+    .landing-page-btn:hover {
+        background-color: #FFF;
+        color: black;
+    }
+    
+/*LANDING PAGE END */
+
+/* ABOUT START */
+
+    .about {       
+        background-color:#F1F1F1;
+        
+    }
+
+    .about .container h1 {
+        font-size: 36px;
+        color:#152D41;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+
+    .about-employee {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 5%;        
+    }
+
+    .about-employee-pic {
+        width: 200px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        }
+    
+      .about-employee:nth-of-type(even) .about-employee-pic {
+         background-image: url('https://picsum.photos/200/200');
+         background-size: cover;
+         background-position: center;
+         
+      }    
+      .about-employee:nth-of-type(odd) .about-employee-pic {
+        background-image: url('https://picsum.photos/250/250');
+        background-size: cover;
+        background-position: center;
+        
+      }
+
+      .about-employee-desc {
+        text-align: justify;
+      }
+      /* ABOUT END */
+
+      /*OFFER START*/
+
+    .offer {
+        background-color:#405D78;      
+    }
+
+    .offer h1 {
+        color:#fff;
+        margin-bottom: 15%;
+        text-align: center;
+    }
+
+    .offer .centering-box {  
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+            
+     }
+    
+    .box-container {
+        display:grid;
+        grid-template-columns: 198px; 
+        grid-template-rows: 194px 194px 194px 194px 194px 194px;
+        gap: 63px;           
+       
+    }
+    
+    .box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 198px;
+        height: 194px;
+        background-color: #F1F1F1;
+        transition:linear;
+        transition-duration: 0.5s;
+    }
+    
+    .box:hover {
+        transform: scale(1.05);
+    }
+    
+    
+    
+    .point {
+        position: absolute;
+        top: -11px;
+        left:-11px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #E07A64;
+    
+    }
+
+    /*FOOTER START*/
+
+    footer {
+        height: 71px;
+        background-color: #4E4E4E;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        height: 100%;
+    }
+
+    .footer-icons {
+        display:flex;
+        justify-content: space-evenly;
+        width:10%;
+        color:#fff;
+        font-size: 32px;
+    }
+
+    footer span {
+        font-weight: bold;
+        font-size: 18px;
+        color:#fff;
+    }
