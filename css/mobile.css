@@ -23,11 +23,69 @@
         align-items: center;
         justify-content: space-between;
         height: 50px;
+    }   
+
+    .nav-links{
+        display:none
     }
 
-    .nav-links {
-        display: none;
-      }
+    .mobile-nav-links ul {
+          display:none;
+          height: 70px;
+          width: 150px;
+          background-color: #4E4E4E;
+        }
+    
+        label {
+          position:relative;
+          display:block;
+          width:60px;
+          height:60px; 
+          padding: 15px;        
+          font-size:34px;
+        }
+        
+        label:after {
+          position: absolute;
+          width:70px;
+          height:50px; 
+          left: 50px;      
+          content:"\2261";
+          font-size:34px;
+          color:white;
+         
+        }
+        
+        input[type=checkbox]:checked ~ label:after {
+        
+          opacity: 0;
+          
+        }
+            
+        input[type=checkbox]:checked ~ ul {
+            display:block;}
+            
+           li {
+            width:100%;
+            opacity:1;
+            text-align:left;
+            margin-bottom: 5px;
+            
+        }
+        
+            li:after {
+              position:absolute;
+              right:30px;
+              content:"\203A";
+              font: bold 20px;
+            
+         }
+
+         ul li a {
+            color:#fff;
+         }
+    
+
 
     
 /* NAVIGATION END */
@@ -62,8 +120,16 @@
     @media (min-height: 700px) {
         .landing-page-shadow .container {
           height: 40%;
-        }
+        }       
       }
+
+    @media (max-width: 350px) {        
+        .landing-page h1 {
+            font-size: 30px;
+        }
+       
+      }
+    
 
     .landing-page p, .landing-page h1 {
         color:#FFF;
@@ -77,14 +143,9 @@
         width: 164px;
         height: 40px;
         border: 3px solid #FFFFFF;
-        transition: 1s linear;
-        transition-property: background, color;
         }
     
-    .landing-page-btn:hover {
-        background-color: #FFF;
-        color: black;
-    }
+    
     
 /*LANDING PAGE END */
 
@@ -98,9 +159,15 @@
     .about .container h1 {
         font-size: 36px;
         color:#152D41;
-        padding-bottom: 10%;
+        margin-bottom: 10%;
         text-align: center;
     }
+
+    @media (max-width: 350px) {        
+        .about .container h1 {
+            font-size: 30px;
+        }       
+      }
 
     .about-employee {
         display: flex;
@@ -147,6 +214,16 @@
         margin-bottom: 15%;
         text-align: center;
     }
+
+    @media (max-width: 350px) {        
+        .offer h1 {
+            font-size: 30px;
+        }       
+      }
+
+    .about-employee-desc h2  {
+        margin-bottom: 10%;
+      }
 
     .offer .centering-box {  
         display: flex;
@@ -196,7 +273,6 @@
     /*FOOTER START*/
 
     footer {
-        height: 71px;
         background-color: #4E4E4E;
     }
 
@@ -204,19 +280,23 @@
         display: flex;
         justify-content: space-between;
         align-items:center;
+        flex-direction: column;
         height: 100%;
     }
 
     .footer-icons {
         display:flex;
         justify-content: space-evenly;
-        width:10%;
+        width: 30%;
         color:#fff;
         font-size: 32px;
+        margin-bottom: 8%;
     }
 
     footer span {
+        margin:5% 0;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 13px;
         color:#fff;
+        
     }

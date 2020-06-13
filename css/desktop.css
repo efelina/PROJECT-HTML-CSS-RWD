@@ -3,7 +3,23 @@
         width: 960px;
         }
 
-/*OFFER START*/
+    .landing-page-btn {
+        transition: 1s linear;
+        transition-property: background, color;
+        }
+        
+    .landing-page-btn:hover {
+        background-color: #FFF;
+        color: black;
+    }
+
+    .about .container h1 {
+        margin-bottom: 50px;
+    }
+
+    .landing-page-shadow .container {
+        height: 35%;
+    }
 
     .offer {
         height: 734px;
@@ -11,7 +27,7 @@
 
     .offer h1 {
         margin-bottom: 15%;
-        text-align: left;
+        
     }
 
     .box-container {
@@ -22,6 +38,17 @@
     
     }
 
+    footer {
+        height: 71px;
+     }
+
+     .footer-icons {
+        font-size: 32px;
+    }
+
+    footer span {
+        margin: 0;     
+    }
 
 
 }
